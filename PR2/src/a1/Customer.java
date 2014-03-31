@@ -108,6 +108,17 @@ public class Customer {
 	private int createID(){
 		return ++idcounter;
 	}
+
+	/** (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", vorname=" + vorname + ", nachname="
+				+ nachname + "]";
+	}
+	
+	
 	
 	
 }

@@ -33,5 +33,27 @@ public class CustomerTests {
 	public void isIdNotEqual(){
 		assertFalse(new Customer("Fritz","Schneider").getId().equals(new Customer("Lisa","Wagner").getId()));
 	} 
+	
+	/**
+	 * this method checks wether First Name can be updated 
+	 */
+	@Test
+	public void firstNameCanBeUpdated(){
+		Customer c = new Customer("Hanz","FirstNameIsWrongBuddy");
+		c.setVorname("John");
+		assertTrue(c.getVorname().equals("John"));
+	}
+	
+	//prüfen ob nachname aktualisiert werden kann
+	
+	//prüfen ob kunde mit gleichen attributen = gleicher hashcode
+	
+	//prüfen ob kunde mit gleichen attributen = equals true
+	
+	//prüfen ob kunde mit verschiedenen attributen = unterschiedlicher hashcode
+	
+	//prüfen ob kunde mit verschiedenen attributen = equals false
+	
+	
 
 }
